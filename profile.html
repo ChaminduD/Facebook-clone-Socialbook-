@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page - SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9ecd33115.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+            <img src="images/logo2.png" alt="Logo" class="logo">
+            </a>
+            <ul>
+                <li><img src="images/notification.png" alt="notification icon"></li>
+                <li><img src="images/inbox.png" alt="inbox icon"></li>
+                <li><img src="images/video.png" alt="video icon"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="search icon">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" alt="profile picture">
+            </div>
+        </div>
+        <!------------------- dropdown settings-menu ---------------------->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="profile picture">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="feedback icon">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" alt="setting icon" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" alt="arrow icon" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" alt="help icon" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" alt="arrow icon" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" alt="display icon" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" alt="arrow icon" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" alt="logout icon" class="settings-icon">
+                    <a href="#">Logout <img src="images/arrow.png" alt="arrow icon" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!---------------------- profile page ----------------------->
+
+    <div class="profile-container">
+        <img src="images/cover.png" alt="cover image" class="cover-img">
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="images/profile.png" alt="profile image" class="pd-image">
+                    <div>
+                        <h3>Jack Nicholson</h3>
+                        <p>120 Friends - 20 mutual</p>
+                        <img src="images/member-1.png" alt="mutual friend">
+                        <img src="images/member-2.png" alt="mutual friend">
+                        <img src="images/member-3.png" alt="mutual friend">
+                        <img src="images/member-4.png" alt="mutual friend">
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+                <button type="button"><img src="images/add-friends.png" alt="add friends icon"> Friend</button>
+                <button type="button"><img src="images/message.png" alt="message icon"> Message</button>
+                <br>
+                <a href="#"><img src="images/more.png" alt="more icon"></a>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <div class="info-col">
+                <div class="profile-intro">
+                    <h3>Intro</h3>
+                    <p class="intro-text">Believe in yourself and you can do unbelievable things. <img src="images/feeling.png" alt="feeling icon"></p>
+                    <hr>
+                    <ul>
+                        <li><img src="images/profile-job.png" alt="job icon"> Director at 99media Ltd</li>
+                        <li><img src="images/profile-study.png" alt="study icon"> Studied at Amity University</li>
+                        <li><img src="images/profile-study.png" alt="study icon"> Went to DPS Delhi</li>
+                        <li><img src="images/profile-home.png" alt="home icon"> Lives in Bangalore, India</li>
+                        <li><img src="images/profile-location.png" alt="location icon"> From Bangalore, India</li>
+                    </ul>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Photos</h3>
+                        <a href="#">All Photos</a>
+                    </div>
+                    
+                    <div class="photo-box">
+                        <div><img src="images/photo1.png" alt="photo1"></div>
+                        <div><img src="images/photo2.png" alt="photo2"></div>
+                        <div><img src="images/photo3.png" alt="photo3"></div>
+                        <div><img src="images/photo4.png" alt="photo4"></div>
+                        <div><img src="images/photo5.png" alt="photo5"></div>
+                        <div><img src="images/photo6.png" alt="photo6"></div>
+                    </div>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Friends</h3>
+                        <a href="#">All Friends</a>
+                    </div>
+                    <p>120 (10 mutual)</p>
+                    <div class="friends-box">
+                        <div><img src="images/member-1.png" alt="friend1"> <p>Joseph N</p></div>
+                        <div><img src="images/member-2.png" alt="friend2"> <p>Nathan N</p></div>
+                        <div><img src="images/member-3.png" alt="friend3"> <p>George D</p></div>
+                        <div><img src="images/member-4.png" alt="friend4"> <p>Francis L</p></div>
+                        <div><img src="images/member-5.png" alt="friend5"> <p>Anthony E</p></div>
+                        <div><img src="images/member-6.png" alt="friend6"> <p>Michael A</p></div>
+                        <div><img src="images/member-7.png" alt="friend7"> <p>Edward M</p></div>
+                        <div><img src="images/member-8.png" alt="friend8"> <p>Bradon C</p></div>
+                        <div><img src="images/member-9.png" alt="friend9"> <p>James Doe</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="profile picture">
+                        <div>
+                            <p>John Nicholson</p>
+                            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                        </div>
+                    </div>
+    
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src="images/live-video.png" alt="video icon"> Live Video</a>
+                            <a href="#"><img src="images/photo.png" alt="photo icon"> Photo/Video</a>
+                            <a href="#"><img src="images/feeling.png" alt="feeling icon"> Feeling/Activity</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="profile picture">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>June 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Hi there <span>@Easy</span> <a href="#">#YouTubeChannel</a></p>
+                    <img src="images/feed-image-1.png" alt="feed-image-1" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png" alt="blue like icon"> 120</div>
+                            <div><img src="images/comments.png" alt="comments icon"> 45</div>
+                            <div><img src="images/share.png" alt="share icon"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt="profile picture"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="profile picture">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>June 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Like and share <span>@Easy</span> <a href="#">#YouTubeChannel</a></p>
+                    <img src="images/feed-image-2.png" alt="feed-image-2" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png" alt="like icon"> 120</div>
+                            <div><img src="images/comments.png" alt="comments icon"> 45</div>
+                            <div><img src="images/share.png" alt="share icon"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt="profile picture"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="profile picture">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>June 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Like and share <span>@Easy</span> <a href="#">#YouTubeChannel</a></p>
+                    <img src="images/feed-image-3.png" alt="feed-image-3" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png" alt="like icon"> 120</div>
+                            <div><img src="images/comments.png" alt="comments icon"> 45</div>
+                            <div><img src="images/share.png" alt="share icon"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt="profile picture"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="profile picture">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>June 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Like and share <span>@Easy</span> <a href="#">#YouTubeChannel</a></p>
+                    <img src="images/feed-image-4.png" alt="feed-image-4" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png" alt="like icon"> 120</div>
+                            <div><img src="images/comments.png" alt="comments icon"> 45</div>
+                            <div><img src="images/share.png" alt="share icon"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt="profile picture"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="profile picture">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>June 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="post-text">Like and share <span>@Easy</span> <a href="#">#YouTubeChannel</a></p>
+                    <img src="images/feed-image-5.png" alt="feed-image-5" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png" alt="like icon"> 120</div>
+                            <div><img src="images/comments.png" alt="comments icon"> 45</div>
+                            <div><img src="images/share.png" alt="share icon"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt="profile picture"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2021 - Chamindu Dahanayaka</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
